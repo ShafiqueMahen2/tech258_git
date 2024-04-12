@@ -51,7 +51,7 @@ There are many alternatives to GitHub including:
 To link a local Git repository to a remove repository on GitHub, you must log on to GitHub and create a new repo.
 Once this is complete, execute the commands below (these are given as instructions on GitHub itself.)
 ```commandline
-git remove add origin <enter GitHub repo link here (.git on the end!)>
+git remote add origin <enter GitHub repo link here (.git on the end!)>
 git branch -M main
 git push -u origin main
 ```
