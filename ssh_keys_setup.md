@@ -7,7 +7,7 @@ In order for SSH to be able to take place, we have to generate a SSH Key Pair so
 ```commandline
 cd ~/.ssh/
 ```
-Now that we are in the right place, we can execute the `ssh-keygen` command to generate the key pair. An example usage has been shown below:
+Now that we are in the right place, we can execute the `ssh-keygen` command to generate the key pair. An example usage has been shown below: <br>
 ![ssh_key_gen_command.png](images/ssh_key_gen_command.png)
 
 Once the command is entered, you will be prompted for:
@@ -15,7 +15,7 @@ Once the command is entered, you will be prompted for:
 - A filename in which to save the key inside the `.ssh/` directory.
 - A passphrase (and a confirmation). If you don't want a passphrase, just use enter to move ahead.
 
-An example can be seen below:
+An example can be seen below: <br>
 ![ssh_keys_setup.png](images/ssh_key_gen_setup.png)
 
 To see if our key was created properly we can run the following command: <br>
@@ -23,7 +23,7 @@ To see if our key was created properly we can run the following command: <br>
 
 **REMEMBER**: The version of the key with the `.pub` extension is our public key, the one without it is our private key!
 
-Example usage:
+Example usage: <br>
 ![ssh_public_key_example.png](images/ssh_public_key_example.png)
 
 Once completed, make sure you exit the `.ssh/` directory in order to prevent security risks! This can be done with the following command (which will take you to your home directory):
@@ -48,10 +48,10 @@ Firstly, we must create an SSH-Agent process using the command `eval`, with ssh-
 
 If done correctly, we are given the Agent pid!
 
-Now that our process has started we must now add the private SSH key to our agent for use. This is done using the `ssh-add` command:
+Now that our process has started we must now add the private SSH key to our agent for use. This is done using the `ssh-add` command: <br>
 ![ssh_add_example.png](images/ssh_add_example.png)
 
-To test if a connection can be established we can run the command `ssh` with the `-T` flag:
+To test if a connection can be established we can run the command `ssh` with the `-T` flag: <br>
 ![ssh_test_example.png](images/ssh_test_example.png)
 
 ## Step 4 - Clone Repo using SSH
@@ -62,7 +62,7 @@ Now that we have the repo link, we can clone it using the following command:
 ```
 git clone <git_repo_here.git>
 ```
-Example usage:
+Example usage: <br>
 ![git_clone_example.png](images/git_clone_example.png)
 
 Our cloned repo will be saved in a directory which will have the same name as our repo!
