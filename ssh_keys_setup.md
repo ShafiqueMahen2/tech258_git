@@ -33,9 +33,9 @@ cd ~
 ## Step 2 - Put our Public Key as our Deploy Key for our GitHub Repo
 Now that we have generated the key pair, we must give our desired repo the public key as that is the endpoint we want to clone from. To do this:
 
-- Go to your GitHub Repo and click on the Settings Tab
+- Go to your GitHub Repo and click on the Settings Tab <br>
 ![github_settings_tab.png](images/github_settings_tab.png)
-- Under the Security section, click Deploy Keys
+- Under the Security section, click Deploy Keys <br>
 ![github_deploy_key_tab.png](images/github_deploy_key_tab.png)
 - Click Add Deploy Key
 - Add the Public Key and give a Title (Make sure to Allow write access, so we can push to the repo in future!)
